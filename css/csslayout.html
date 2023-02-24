@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css layout</title>
+    <style>
+        body{
+            background-color: #f2cdcd;
+        }
+        .cont{
+            display: grid;
+            height: 600px;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            margin: 10px;
+        }
+        /* .box{
+            height: 100px;
+            width: 100px;
+        } */
+        .box1{
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            font-size: 50px;
+        }
+        .box2{
+            background-color: #237b7b;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            text-align: center;
+            font-size: 50px;
+        }
+        .box3{
+            background-color: #f87979;
+            grid-column: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            font-size: 20px;
+            display: flex;
+            justify-content:space-around;
+            
+        }
+        .box4{
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            font-size: 50px;
+        }
+        .img1{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            align-self: end;
+            overflow: scroll;
+        }
+        .img2{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            align-self: end;
+        }
+        .img3{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+        <div class="cont">
+        <div class="box box1">header</div>
+        <div class="box box2">aside</div>
+        <div class="box box3">
+            <!-- <p>article</p> -->
+            <div class="img1"><img src="https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg?auto=compress&cs=tinysrgb&w=400" alt="not found"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+        </div>
+        <div class="box box4">footer</div>
+    </div>
+</body>
+</html>

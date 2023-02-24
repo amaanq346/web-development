@@ -1,0 +1,32 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* element selector */
+/* h1{
+    color: aquamarine;
+}
+p{
+    color: aqua;
+} */
+
+/* class selector */
+.heading{
+    color: brown;
+}
+.pra{
+    color: blueviolet;
+    font-size: 20px;
+}
+
+/* id selector */
+#hello{
+    text-align: center;
+}
+
+/* selector list */
+/* .class1, .class2, .class3{
+
+} */

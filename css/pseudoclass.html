@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        p:hover{
+            background-color: #808080;
+            color: #fff;
+        }
+        input:focus{
+            color: red;
+            background-color: aqua;
+        }
+        /* a:hover{
+            color: brown;
+            background-color: #808080;
+            text-decoration: none;
+            font-size: 45px;
+        }
+        a:active{
+            color: blue;
+        } */
+        /* a:visited{
+            color: crimson;
+        } */
+        /* a:first-child{
+            background-color: yellow;
+        } */
+        a:nth-child(odd){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, totam?</p>
+    <input type="text">
+    <br>
+    <nav>
+        <a href="https://www.google.com/">google</a>
+        <a href="https://www.google.com/">google</a>
+        <a href="https://www.google.com/">google</a>
+    </nav>
+</body>
+</html>

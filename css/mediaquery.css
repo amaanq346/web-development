@@ -1,0 +1,50 @@
+
+body{
+    background-color: red;
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after{
+    content: 'welcome to this demo';
+}
+
+@media (max-width:400px) {
+    /* if viewport is atleast 900px this media is apply    */
+    body{
+        background-color: yellow;
+    }
+    div::after{
+        content: 'very small';
+    }
+}
+@media (min-width:400px) and (max-width:720px){
+    /* if viewport is atleast 900px this media is apply    */
+    body{
+        background-color: blue;
+    }
+    div::after{
+        content: 'mid small';
+    }
+}
+/* or range in maths format */
+@media (min-width:720px) and (max-width:900px){
+    /* if viewport is atleast 900px this media is apply    */
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: 'above mid';
+    }
+}
+@media (min-width:900px) {
+    /* if viewport is atleast 900px this media is apply    */
+    body{
+        background-color: pink;
+    }
+    div::after{
+        content: 'large';
+    }
+}

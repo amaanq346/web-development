@@ -1,0 +1,19 @@
+/* descendent selector */
+main p{
+    color: blue;
+}
+/* child selector */
+/* h1>p{
+    color: red;
+} */
+
+/* adjacent sibling selector */
+section + p{
+    border: 5px solid black;
+}
+
+/* general adjacent sibling selector */
+section ~ p{
+    border: 5px solid black;
+}
+
